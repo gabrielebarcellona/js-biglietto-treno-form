@@ -26,16 +26,16 @@ const discount40 = 40;
 console.log('discount40');
 
 //nome dell'utente
-const name = document.querySelector('.nome');
+const name = document.querySelector('.nome').value;
 
 
 // età dell'utente 
-const age =  document.querySelector('.età');
+const age =  document.querySelector('.età').value;
 
 console.log('age' , age);
 
 //km che deve percorrere l'utente
-const kmUser = document.querySelector('.km')
+const kmUser = document.querySelector('.km').value;
 console.log('kmUser' , kmUser);
 
 
@@ -56,10 +56,12 @@ if (age < 18) {
 
 console.log('newPrice' , newPrice);
 
+ 
+
+report = name + age + newPrice
 
 
-
-alert(newPrice);
+document.getElementById('output').innerHTML = report
 
 })
 
