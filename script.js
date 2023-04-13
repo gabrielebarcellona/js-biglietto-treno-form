@@ -9,6 +9,9 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 MILESTONE 1:
 Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati), realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch’essa da scrivere in console.*/
 
+const eleBtnRandom = document.querySelector('.btn-random');
+
+eleBtnRandom.addEventListener('click',function(){
 
 // prezzo del biglietto per km(0,21)
 const priceKm = 0.21;
@@ -22,14 +25,18 @@ console.log('discount20');
 const discount40 = 40;
 console.log('discount40');
 
+//nome dell'utente
+const name = document.querySelector('.nome');
+
+
 // età dell'utente 
-const age =  ("Inserisci la tua età")
+const age =  document.querySelector('.età');
+
 console.log('age' , age);
 
 //km che deve percorrere l'utente
-const kmUser = parseInt(('Inserisci i km da percorrere' , 100));
+const kmUser = document.querySelector('.km')
 console.log('kmUser' , kmUser);
-
 
 
 //calcolo pricekm x kmuser
@@ -49,9 +56,9 @@ if (age < 18) {
 
 console.log('newPrice' , newPrice);
 
-const eleBtnRandom = document.querySelector('.btn-random');
 
-eleBtnRandom.addEventListener('click',function(){
+
+
 alert(newPrice);
 
 })
